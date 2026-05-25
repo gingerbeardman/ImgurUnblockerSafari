@@ -1,0 +1,61 @@
+:root {
+    color-scheme: light dark;
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --card-bg: white;
+    --label-color: #666;
+    --accent-color: #4CAF50;
+    --shadow: rgba(0,0,0,0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #2b2b2b;
+        --text-color: #eee;
+        --card-bg: #383838;
+        --label-color: #aaa;
+        --shadow: rgba(0,0,0,0.3);
+    }
+}
+
+body {
+    width: 220px;
+    padding: 15px;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.count-container {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--shadow);
+    margin-bottom: 10px;
+}
+
+.count {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 12px;
+    color: var(--label-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
